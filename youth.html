@@ -4,56 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lethbridge-West - The United Conservative Party | Official Website</title>
+    <title>Youth Sector | UCP</title>
     <link rel="icon" href="images/favicon.ico" type="image/ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/youth.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <!-- Meta Descriptions & Keywords -->
-    <meta name="description"
-        content="Welcome to UCP West-Lethbridge. Learn about our Board, Governance, events, and more.">
-    <meta name="keywords"
-        content="UCP, Lethbridge, West, Lethbridge-West UCP, Board of Directors, Governance, Conservative, Events">
-
-    <!-- Canonical Tag -->
-    <link rel="canonical" href="https://lethbridgewestucp.ca">
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="The United Conservative Party - Lethbridge-West">
-    <meta property="og:description"
-        content="Welcome to UCP West-Lethbridge. Learn about our Board, Governance, events, and more.">
-    <meta property="og:image" content="https://lethbridgewestucp.ca/images/favicon.ico">
-    <meta property="og:url" content="https://lethbridgewestucp.ca/index.html">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="The United Conservative Party - Lethbridge-West">
-    <meta name="twitter:description"
-        content="Welcome to UCP West-Lethbridge. Learn about our Board, Governance, events, and more.">
-    <meta name="twitter:image" content="https://lethbridgewestucp.ca/images/favicon.ico">
-
-    <!-- Structured Data (Organization Example) -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "UCP West-Lethbridge",
-            "url": "https://lethbridgewestucp.ca",
-            "logo": "https://lethbridgewestucp.ca/images/favicon.ico",
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "email": "Lethbridge-West@unitedconservative.ca",
-                "contactType": "customer service",
-                "areaServed": "Lethbridge, AB"
-            }
-        }
-        </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="Official Youth Section of the UCP - Get involved and shape the future">
+    <meta name="keywords" content="UCP, Youth, Volunteer, Politics, Join, Donate">
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <div class="container">
             <!-- Logo -->
@@ -97,7 +60,6 @@
                     <li><a href="/events">Events</a></li>
 
                     <!-- RENAMED: Contact → Press (dropdown) -->
-                    <li><a href="/youth">Youth</a></li>
                     <li>
                         <a href="#">Press</a>
                         <ul>
@@ -133,7 +95,6 @@
 
                     <!-- Contact → Press dropdown not typically shown in this older mobile approach,
                but you could replicate if you wish. For simplicity, do a single link: -->
-                    <li><a href="/youth">Youth</a></li>
                     <li>
                         <a href="#">Press</a>
                         <ul>
@@ -160,122 +121,71 @@
         </div>
     </header>
 
-    <section class="hero">
+    <!-- Hero Section -->
+    <section class="youth-hero">
         <div class="hero-content">
-            <h1>Lethbridge-West</h1>
-            <p>Constituency Association Board</p>
-            <div class="buttons">
-                <a href="https://www.unitedconservative.ca/take-action/membership/" target="_blank">join</a>
-                <a href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/"
-                    target="_blank" class="donate">Donate</a>
+            <h1>Young Conservatives</h1>
+            <p class="tagline">"Upholding Values, Shaping The Future"</p>
+            <p class="subtext">The official Youth Section of the UCP</p>
+        </div>
+    </section>
+
+    <!-- Stay Up To Date Section -->
+    <section class="stay-up-to-date">
+        <h2>Want to stay up to date?</h2>
+        <div class="social-grid">
+            <div class="social-box"><i class="fab fa-facebook-f"></i></div>
+            <div class="social-box"><i class="fab fa-snapchat-ghost"></i></div>
+            <div class="social-box"><i class="fab fa-twitter"></i></div>
+            <div class="social-box"><i class="fab fa-instagram"></i></div>
+            <div class="social-box"><i class="fab fa-tiktok"></i></div>
+            <div class="social-box">Rebuilding Trust</div>
+            <div class="social-box">Find Out More</div>
+            <div class="social-box">Sign Up Today</div>
+            <div class="social-box">Join The Conversation</div>
+        </div>
+        <div class="sign-up-wrapper">
+            <button class="sign-up-btn">Sign Up</button>
+        </div>
+    </section>
+
+    <!-- Combined Kids + Unleash Your Potential Box -->
+    <section class="kids-potential-box">
+        <div class="combined-content">
+            <div class="combined-left">
+                <h2>Picture of the Kids</h2>
+                <div class="kids-placeholder"></div>
+            </div>
+            <div class="combined-right">
+                <h2>Unleash Your Potential</h2>
+                <ul>
+                    <li>Providing you with opportunities</li>
+                    <li>Embracing Conservative Values</li>
+                    <li>Leadership in Action</li>
+                    <li>Civic Engagement</li>
+                    <li>Building Strong Networks</li>
+                    <li>Career in Politics</li>
+                    <li>Influence Policy Decisions</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section class="youtube-section">
-        <h2 class="youtube-title">Listening to Albertans</h2>
-        <div class="youtube-container">
-            <iframe class="youtube-iframe"
-                src="https://www.youtube.com/embed/6SSnFFCdEp4?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0"
-                title="Listening to Albertans"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-            </iframe>
+    <!-- Contact Section -->
+    <section class="contact-info">
+        <div>
+            <i class="fas fa-building"></i>
+            <h3>Address</h3>
+            <p>PO Box 513. Lethbridge, AB, T1J 3Z4</p>
+        </div>
+        <div>
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p><a href="mailto:Lethbridge-West@unitedconservative.ca">Lethbridge-West@unitedconservative.ca</a></p>
         </div>
     </section>
 
-    <!-- Voting Section -->
-    <section class="voting-section">
-        <div class="voting-container">
-            <h2>Your Opinion Matters: Vote Now</h2>
-            <div class="cards">
-                <!-- Bill 37 -->
-                <div class="card">
-                    <p>Do you support Bill 37: Mental Health Services Protection Amendment Act?</p>
-                    <div class="buttons">
-                        <button class="btn yay vote-button" data-question="1" data-vote="yay">YAY</button>
-                        <button class="btn nay vote-button" data-question="1" data-vote="nay">NAY</button>
-                    </div>
-                </div>
-
-                <!-- Bill 33 -->
-                <div class="card">
-                    <p>Do you support Bill 33: Protection of Privacy Act?</p>
-                    <div class="buttons">
-                        <button class="btn yay vote-button" data-question="2" data-vote="yay">YAY</button>
-                        <button class="btn nay vote-button" data-question="2" data-vote="nay">NAY</button>
-                    </div>
-                </div>
-
-                <!-- Bill 34 -->
-                <div class="card">
-                    <p>Do you support Bill 34: Access to Information Act?</p>
-                    <div class="buttons">
-                        <button class="btn yay vote-button" data-question="3" data-vote="yay">YAY</button>
-                        <button class="btn nay vote-button" data-question="3" data-vote="nay">NAY</button>
-                    </div>
-                </div>
-
-                <!-- Bill 35 -->
-                <div class="card">
-                    <p>Do you support Bill 35: All Season Resorts Act?</p>
-                    <div class="buttons">
-                        <button class="btn yay vote-button" data-question="4" data-vote="yay">YAY</button>
-                        <button class="btn nay vote-button" data-question="4" data-vote="nay">NAY</button>
-                    </div>
-                </div>
-
-                <!-- Bill 36 -->
-                <div class="card">
-                    <p>Do you support Bill 36: Infrastructure Renewal Act?</p>
-                    <div class="buttons">
-                        <button class="btn yay vote-button" data-question="5" data-vote="yay">YAY</button>
-                        <button class="btn nay vote-button" data-question="5" data-vote="nay">NAY</button>
-                    </div>
-                </div>
-
-                <!-- Bill 38 -->
-                <div class="card">
-                    <p>Do you support Bill 38: Education Enhancement Act?</p>
-                    <div class="buttons">
-                        <button class="btn yay vote-button" data-question="6" data-vote="yay">YAY</button>
-                        <button class="btn nay vote-button" data-question="6" data-vote="nay">NAY</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="support-movement">
-        <h2>Support the Movement</h2>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-        <style>
-            .support-movement p {
-                font-family: 'Raleway', sans-serif;
-                font-size: 1.5rem;
-            }
-        </style>
-        <p>Our party is fueled by proud Albertans, determined to see our province become the very best it can be. Can
-            you chip in now?</p>
-        <!-- <p>Our party is fueled by proud Albertans, determined to see our province become the very best it can be. Can you chip in now?</p> -->
-        <div class="donation-buttons">
-            <a
-                href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/?amount=30">$30</a>
-            <a
-                href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/?amount=60">$60</a>
-            <a
-                href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/?amount=120">$120</a>
-            <a
-                href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/?amount=500">$500</a>
-            <a
-                href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/?amount=2500">$2,500</a>
-            <a
-                href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/?amount=5000">$5,000</a>
-        </div>
-    </section>
-
-
-
+    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-links">
@@ -283,7 +193,6 @@
                     <li><a href="/">Home</a></li>
                     <li><a href="/board-of-directors">About</a></li>
                     <li><a href="/events">Events</a></li>
-                    <li><a href="/youth">Youth</a></li>
                     <li><a href="/press/articles">Press</a></li>
                 </ul>
                 <ul class="regular-links">
@@ -291,10 +200,15 @@
                             href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/">Donate</a>
                     </li>
                     <li><a href="https://www.unitedconservative.ca/petitions/volunteer/">Volunteer</a></li>
-                    <li><a href="https://www.unitedconservative.ca/take-action/membership/">join</a></li>
+                    <li><a href="https://www.unitedconservative.ca/take-action/membership/">Join</a></li>
                     <li><a href="https://www.unitedconservative.ca/petitions/subscribe/">Subscribe</a></li>
                 </ul>
             </div>
+
+            <div class="footer-logo">
+                <img src="images/Copy_of_Add_a_subheading__4_-removebg-preview.png" alt="Footer Logo" />
+            </div>
+
             <div class="footer-social">
                 <!-- Facebook -->
                 <a href="https://www.facebook.com/p/United-Conservative-Party-Lethbridge-West-100068133120762/"
@@ -343,14 +257,8 @@
             <p>© 2025 UCP Lethbridge-West. All Rights Reserved.</p>
         </div>
     </footer>
-    <div id="vote-popup" class="vote-popup hidden">
-        <div class="vote-popup-content">
-            <span id="vote-popup-close" class="close-button">&times;</span>
-            <h2>You Are Heard!</h2>
-        </div>
-    </div>
+
     <script src="script.js"></script>
-    <script src="voting.js"></script>
 </body>
 
 </html>
