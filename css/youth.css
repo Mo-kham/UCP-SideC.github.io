@@ -30,7 +30,7 @@
     font-weight: 400;
 }
 
-/* Stay Up To Date Section */
+/* --- STAY UP TO DATE SECTION --- */
 .stay-up-to-date {
     text-align: center;
     padding: 50px 20px;
@@ -41,9 +41,10 @@
     margin-bottom: 20px;
 }
 
+/* Create a 3x3 grid for the social boxes */
 .social-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-items: center;
     margin-bottom: 40px;
@@ -54,13 +55,15 @@
     padding: 30px;
     border-radius: 10px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: #0071e2;
     transition: background-color 0.3s;
 }
 
 .social-box i {
     font-size: 2rem;
+    display: block;
+    margin-bottom: 8px;
 }
 
 .social-box:hover {
@@ -87,43 +90,52 @@
     background-color: #0056b3;
 }
 
-/* Combined Kids + Unleash Your Potential Box */
+/* --- KIDS + UNLEASH (SIDE-BY-SIDE, IN ONE BOX) --- */
 .kids-potential-box {
-    display: flex;
-    justify-content: center;
-    padding: 40px 20px;
-    background-color: #f7f7f7;
+    max-width: 1200px; /* Max container width */
+    margin: 40px auto; /* Center horizontally */
+    background-color: #ffffff; /* White background so it stands out */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    margin: 40px auto;
-    width: 80%; /* Centered box */
+    display: flex; /* Side by side layout */
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
+    box-sizing: border-box;
 }
 
-.combined-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
+/* Left (Kids) and Right (Potential) columns each ~48% width */
+.kids-col,
+.potential-col {
+    width: 48%;
+    text-align: left; /* Force left alignment inside columns */
 }
 
-.combined-left,
-.combined-right {
-    width: 100%;
-    margin-bottom: 20px; /* Added margin for spacing */
-}
-
-.combined-left h2,
-.combined-right h2 {
+.kids-col h2,
+.potential-col h2 {
     font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-.combined-right ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.kids-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: block;
 }
 
-.combined-right ul li {
+.potential-col p {
+    font-size: 1.5rem;
+}
+
+.potential-col ul {
+    list-style: outside;
+    padding-left: 5vh;
+    margin-left: 0;
+}
+
+.potential-col ul li {
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
