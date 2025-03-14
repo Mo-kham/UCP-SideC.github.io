@@ -1,7 +1,7 @@
 /* --------------------------------------
    HERO SECTION
    -------------------------------------- */
-   .news-hero {
+.news-hero {
     position: relative;
     height: 90vh; /* bigger hero for a larger background image */
     background: url("../images/Great Plains in Alberta Canada stock photo.jpg")
@@ -27,11 +27,11 @@
     z-index: 2;
 }
 .news-hero h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
 }
 .news-hero .tagline {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: italic;
     color: #f0f0f0;
 }
@@ -52,6 +52,13 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.press-link {
+    display: block;
+    max-width: 180px;
+    height: auto;
+    margin: 0 auto;
 }
 
 /* --------------------------------------
@@ -76,6 +83,15 @@
 .article-content {
     flex: 1;
 }
+
+.article-date {
+    color: inherit;
+    margin-left: 8px;
+    font-weight: normal;
+    text-transform: none;
+    font-size: 0.9rem;
+}
+
 .category {
     font-size: 0.9rem;
     font-weight: bold;
@@ -83,18 +99,23 @@
     margin-bottom: 0.3rem;
     color: #0320a5;
 }
+
 .health {
     color: #3b82f6;
 }
+
 .economy {
     color: #ef4444;
 }
+
 .general {
     color: #10b981;
 }
+
 .social {
     color: #9333ea;
 }
+
 .article-title {
     font-size: 1.2rem;
     font-weight: 700;
