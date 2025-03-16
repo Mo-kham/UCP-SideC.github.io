@@ -30,85 +30,155 @@
     font-weight: 400;
 }
 
-/* --- STAY UP TO DATE SECTION --- */
-.stay-up-to-date {
+/* ----------------------------------
+   Sign-up Form Section
+---------------------------------- */
+.signup-section {
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 20px;
 }
 
-.stay-up-to-date h2 {
+.signup-section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-/* Create a 3x3 grid for the social boxes */
+.signup-section .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.signup-section .form-row input {
+    flex: 1 1 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.signup-section .form-row button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-section .form-row button:hover {
+    background-color: #0056b3;
+}
+
+/* Social Grid Section */
+.social-grid-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
 .social-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    justify-items: center;
-    margin-bottom: 40px;
 }
 
 .social-box {
-    background-color: #f0f0f0;
-    padding: 30px;
+    background-color: #fff;
     border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    font-size: 1.2rem;
-    color: #0071e2;
-    transition: background-color 0.3s;
 }
 
-.social-box i {
-    font-size: 2rem;
-    display: block;
+/* icons */
+.icon {
+    font-size: 4rem; /* larger than before (was 3rem or 50px) */
+    margin-bottom: 10px;
+    display: inline-block; /* ensure the icon respects this sizing */
+    width: auto; /* remove fixed width if you had it */
+    height: auto;
+}
+
+/* For the custom X SVG: make the entire <svg> bigger too. */
+.x-icon {
+    width: 64px; /* or 80px, whichever size you prefer */
+    height: 64px;
+}
+
+/* Brand color classes */
+.tiktok-icon {
+    color: #ee1d52; /* or #69c9d0 if you prefer the other TikTok color */
+}
+.insta-icon {
+    color: #e1306c;
+}
+.linkedin-icon {
+    color: #0a66c2;
+}
+.trust-icon {
+    color: #333; /* or any color you want for handshake */
+}
+.info-icon {
+    color: #000; /* black or pick your own */
+}
+/* For X: we color the path black. */
+.x-icon path {
+    fill: #000 !important;
+}
+
+/* Title text */
+.title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #000;
     margin-bottom: 8px;
 }
 
-.social-box:hover {
-    background-color: #0071e2;
-    color: white;
-}
-
-.sign-up-wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.sign-up-btn {
-    background-color: #007bff;
-    color: white;
-    font-size: 1.2rem;
-    padding: 12px 24px;
+/* The red button subtitle => same color as Donate (#ed272a) */
+.subtitle-btn {
+    display: inline-block;
+    background-color: #ed272a;
+    color: #fff;
+    padding: 8px 16px;
     border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
     transition: background-color 0.3s;
+    margin-top: auto; /* push to bottom if you want */
+}
+.subtitle-btn:hover {
+    background-color: #b8001c; /* Donate hover color */
 }
 
-.sign-up-btn:hover {
-    background-color: #0056b3;
-}
-
-/* --- KIDS + UNLEASH (SIDE-BY-SIDE, IN ONE BOX) --- */
+/* ----------------------------------
+   Kids + Unleash Potential (Side by Side)
+---------------------------------- */
 .kids-potential-box {
-    max-width: 1200px; /* Max container width */
-    margin: 40px auto; /* Center horizontally */
-    background-color: #ffffff; /* White background so it stands out */
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #ffffff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    display: flex; /* Side by side layout */
+    display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 40px 20px;
     box-sizing: border-box;
 }
 
-/* Left (Kids) and Right (Potential) columns each ~48% width */
 .kids-col,
 .potential-col {
     width: 48%;
-    text-align: left; /* Force left alignment inside columns */
+    text-align: left;
 }
 
 .kids-col h2,
@@ -127,15 +197,142 @@
 
 .potential-col p {
     font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
 .potential-col ul {
     list-style: outside;
-    padding-left: 5vh;
+    padding-left: 2rem;
     margin-left: 0;
 }
 
 .potential-col ul li {
     font-size: 1.2rem;
     margin-bottom: 10px;
+}
+
+/* ----------------------------------
+   Contact Section
+---------------------------------- */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+.contact-info div {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    flex: 1;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
+}
+
+.contact-info div i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+}
+
+.contact-info h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #66b3ff;
+}
+
+/* --------------------------------------
+   FOOTER
+   -------------------------------------- */
+footer {
+    background-color: #0071e2;
+    color: white;
+    padding: 20px 0;
+}
+.footer-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.footer-links {
+    display: flex;
+    gap: 100px;
+}
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+.footer-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.footer-logo img {
+    max-width: 250px;
+    height: auto;
+    display: block;
+}
+.footer-info {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #d9d9d9;
+    margin-top: 20px;
+}
+.footer-info p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #d9d9d9;
+}
+
+/* --------------------------------------
+   RESPONSIVE EXAMPLES
+   -------------------------------------- */
+@media (max-width: 768px) {
+    .news-container {
+        flex-direction: column;
+    }
+    .news-article {
+        flex-direction: column;
+    }
+    .article-image img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
 }

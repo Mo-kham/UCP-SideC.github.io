@@ -315,6 +315,54 @@
         width: 24px;
         height: 24px;
     }
+
+    /* Hero adjustments */
+    .youth-hero {
+        height: auto;
+        padding: 40px 20px;
+        background-position: center;
+        background-size: cover;
+    }
+    .youth-hero .hero-content {
+        max-width: 90%;
+    }
+    .youth-hero h1 {
+        font-size: 2.5rem;
+    }
+    .youth-hero .tagline {
+        font-size: 1.5rem;
+    }
+    .youth-hero .subtext {
+        font-size: 1.2rem;
+    }
+
+    /* Sign-up form stack */
+    .signup-section .form-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .signup-section .form-row input,
+    .signup-section .form-row button {
+        flex: none;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    /* Social grid: reduce to 2 columns on smaller screens */
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Kids + Potential box => stack */
+    .kids-potential-box {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .kids-col,
+    .potential-col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -326,6 +374,9 @@
     }
     .youtube-iframe {
         height: 250px;
+    }
+    .social-grid {
+        grid-template-columns: 1fr;
     }
 }
 

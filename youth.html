@@ -21,7 +21,7 @@
         <div class="container">
             <!-- Logo -->
             <div class="logo">
-                <a href="/">
+                <a href="./index.html">
                     <img src="images/ucp-logo-reverse-rgb.png" alt="UCP W-L Home Media">
                 </a>
             </div>
@@ -32,12 +32,13 @@
             <!-- Desktop Navigation -->
             <nav class="desktop-nav">
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <li>
                         <a href="#">About</a>
                         <ul>
-                            <li><a href="/board-of-directors">Board of Directors</a></li>
-                            <li><a href="/governance">Governance</a></li>
+                            <li><a href="./board-of-directors.html">Board of Directors</a></li>
+                            <li><a href="./governance.html">Governance</a></li>
+                            <li><a href="./united-conservative-party.html">United Conservative Party</a></li>
                         </ul>
                     </li>
                     <li>
@@ -46,10 +47,10 @@
                             <li><a href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/"
                                     target="_blank">Donate</a></li>
                             <li><a href="https://www.unitedconservative.ca/take-action/membership/"
-                                    target="_blank">join</a></li>
+                                    target="_blank">Join</a></li>
                             <li><a href="https://www.unitedconservative.ca/strongandfreeclub/" target="_blank">Strong
                                     and Free Club</a></li>
-                            <li><a href="https://www.unitedconservative.ca/membership-check/" target="_blank">Join
+                            <li><a href="https://www.unitedconservative.ca/membership-check/" target="_blank">Membership
                                     Check</a></li>
                             <li><a href="https://www.unitedconservative.ca/petitions/volunteer/"
                                     target="_blank">Volunteer</a></li>
@@ -57,19 +58,16 @@
                                     target="_blank">Subscribe</a></li>
                         </ul>
                     </li>
-                    <li><a href="/events">Events</a></li>
-
-                    <!-- RENAMED: Contact → Press (dropdown) -->
-                    <li><a href="/youth">Youth</a></li>
+                    <li><a href="./events.html">Events</a></li>
+                    <li><a href="./youth.html">Youth</a></li>
                     <li>
                         <a href="#">Press</a>
                         <ul>
-                            <li><a href="./news.html">Articles</a></li>
-                            <li><a href="/press/videos">Videos</a></li>
+                            <li><a href="./news.html">News</a></li>
+                            <li><a href="./[news_videos].html">Videos</a></li>
                         </ul>
                     </li>
 
-                    <!-- RENAMED: Membership → Join -->
                     <li>
                         <a href="https://www.unitedconservative.ca/take-action/membership/" class="join"
                             target="_blank">
@@ -87,37 +85,54 @@
 
             <!-- Mobile Navigation -->
             <nav class="mobile-nav">
+                <ul id="main-menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#" onclick="openSubMenu('about-menu')">About →</a></li>
+                    <li><a href="#" onclick="openSubMenu('action-centre-menu')">Action Centre →</a></li>
+                    <li><a href="./events.html">Events</a></li>
+                    <li><a href="./youth.html">Youth</a></li>
+                    <li><a href="#" onclick="openSubMenu('press-menu')">Press →</a></li>
+                    <li><a href="https://www.unitedconservative.ca/take-action/membership/" class="join"
+                            target="_blank">Join</a></li>
+                    <li><a href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/"
+                            class="donate" target="_blank">Donate</a></li>
+                </ul>
+            </nav>
+
+            <!-- About Submenu -->
+            <nav class="mobile-submenu" id="about-menu">
+                <button class="back-button" onclick="closeSubMenu('about-menu')">← Back</button>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/board-of-directors">Board of Directors</a></li>
-                    <li><a href="/governance">Governance</a></li>
-                    <li><a href="/news">News</a></li>
-                    <li><a href="/events">Events</a></li>
+                    <li><a href="./board-of-directors.html">Board of Directors</a></li>
+                    <li><a href="./governance.html">Governance</a></li>
+                </ul>
+            </nav>
 
-                    <!-- Contact → Press dropdown not typically shown in this older mobile approach,
-               but you could replicate if you wish. For simplicity, do a single link: -->
-                    <li><a href="/youth">Youth</a></li>
-                    <li>
-                        <a href="#">Press</a>
-                        <ul>
-                            <li><a href="/press/articles">Articles</a></li>
-                            <li><a href="/press/videos">Videos</a></li>
-                        </ul>
+            <!-- Action Centre Submenu -->
+            <nav class="mobile-submenu" id="action-centre-menu">
+                <button class="back-button" onclick="closeSubMenu('action-centre-menu')">← Back</button>
+                <ul>
+                    <li><a href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/"
+                            target="_blank">Donate</a></li>
+                    <li><a href="https://www.unitedconservative.ca/take-action/membership/" target="_blank">Join</a>
                     </li>
+                    <li><a href="https://www.unitedconservative.ca/strongandfreeclub/" target="_blank">Strong and Free
+                            Club</a></li>
+                    <li><a href="https://www.unitedconservative.ca/membership-check/" target="_blank">Membership
+                            Check</a></li>
+                    <li><a href="https://www.unitedconservative.ca/petitions/volunteer/" target="_blank">Volunteer</a>
+                    </li>
+                    <li><a href="https://www.unitedconservative.ca/petitions/subscribe/" target="_blank">Subscribe</a>
+                    </li>
+                </ul>
+            </nav>
 
-                    <!-- Renamed membership to join -->
-                    <li>
-                        <a href="https://www.unitedconservative.ca/take-action/membership/" class="join"
-                            target="_blank">
-                            Join
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.unitedconservative.ca/take-action/donate/ca-donations-lethbridge-west/"
-                            class="donate" target="_blank">
-                            Donate
-                        </a>
-                    </li>
+            <!-- Press Submenu -->
+            <nav class="mobile-submenu" id="press-menu">
+                <button class="back-button" onclick="closeSubMenu('press-menu')">← Back</button>
+                <ul>
+                    <li><a href="./news.html">News</a></li>
+                    <li><a href="./news_videos.html">Videos</a></li>
                 </ul>
             </nav>
         </div>
@@ -132,22 +147,69 @@
         </div>
     </section>
 
-    <!-- Stay Up To Date Section -->
-    <section class="stay-up-to-date">
+
+    <!-- Sign-up Form Section -->
+    <!-- Sign-up Form Section -->
+    <section class="signup-section">
         <h2>Want to stay up to date?</h2>
-        <div class="social-grid">
-            <div class="social-box"><i class="fab fa-facebook-f"></i></div>
-            <div class="social-box"><i class="fab fa-snapchat-ghost"></i></div>
-            <div class="social-box"><i class="fab fa-twitter"></i></div>
-            <div class="social-box"><i class="fab fa-instagram"></i></div>
-            <div class="social-box"><i class="fab fa-tiktok"></i></div>
-            <div class="social-box">Rebuilding Trust</div>
-            <div class="social-box">Find Out More</div>
-            <div class="social-box">Sign Up Today</div>
-            <div class="social-box">Join The Conversation</div>
+        <div class="form-row">
+            <input type="text" placeholder="Prénom">
+            <input type="text" placeholder="Nom de famille">
+            <input type="text" placeholder="Phone #">
+            <input type="email" placeholder="Email">
+            <button type="submit">Sign Up</button>
         </div>
-        <div class="sign-up-wrapper">
-            <button class="sign-up-btn">Sign Up</button>
+    </section>
+
+    <!-- SOCIAL BOXES (Now with brand-color icons + red button subtitles) -->
+    <section class="social-grid-section">
+        <div class="social-grid">
+
+            <!-- 1: TIKTOK -->
+            <div class="social-box">
+                <i class="fab fa-tiktok icon tiktok-icon"></i>
+                <h3 class="title">Tiktok</h3>
+                <!-- Subtitle as a button => same color as Donate (#ed272a) -->
+                <a href="#" class="subtitle-btn">Swipe up &amp; stay updated!</a>
+            </div>
+
+            <!-- 2: Rebuilding trust -->
+            <div class="social-box">
+                <i class="fas fa-handshake icon trust-icon"></i>
+                <h3 class="title">Rebuilding trust</h3>
+                <a href="#" class="subtitle-btn">Find out more</a>
+            </div>
+
+            <!-- 3: Instagram -->
+            <div class="social-box">
+                <i class="fab fa-instagram icon insta-icon"></i>
+                <h3 class="title">Instagram</h3>
+                <a href="#" class="subtitle-btn">Your daily dose of insights</a>
+            </div>
+
+            <!-- 4: LinkedIn -->
+            <div class="social-box">
+                <i class="fab fa-linkedin-in icon linkedin-icon"></i>
+                <h3 class="title">LinkedIn</h3>
+                <a href="#" class="subtitle-btn">Networking starts here</a>
+            </div>
+
+            <!-- 5: Sign up today -->
+            <div class="social-box">
+                <i class="fas fa-info-circle icon info-icon"></i>
+                <h3 class="title">Sign up today</h3>
+            </div>
+
+            <!-- 6: X (replacing Twitter bird) => custom X icon (SVG) -->
+            <div class="social-box">
+                <svg class="icon x-icon" viewBox="0 0 1200 1227">
+                    <path
+                        d="M714.2,519.3L1160.9,0H1055L667.1,450.9L357.3,0H0l468.5,681.8L0,1226.4h105.9l409.6-476.2
+               l327.2,476.2H1200L714.2,519.3z M569.2,687.8l-47.5-67.9L144,79.7h162.6l304.8,436l47.5,67.9l396.2,566.7H892.5L569.2,687.8z" />
+                </svg>
+                <h3 class="title">X (Twitter)</h3>
+                <a href="#" class="subtitle-btn">Join us on X!</a>
+            </div>
         </div>
     </section>
 
@@ -155,7 +217,7 @@
     <section class="kids-potential-box">
         <div class="kids-col">
             <h2>Picture of the Kids</h2>
-            <img src="./images/Suport Alberta.jpg" alt="Alberta Youhth" class="kids-image">
+            <img src="./images/Suport Alberta.jpg" alt="Alberta Youth" class="kids-image">
         </div>
         <div class="potential-col">
             <h2>Unleash Your Potential</h2>
@@ -186,15 +248,18 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer (FIXED) -->
     <footer>
         <div class="footer-container">
+            <!-- Left: Navigation Links -->
             <div class="footer-links">
+                <!-- You can use the same 'bold-links' and 'regular-links' classes if you like -->
                 <ul class="bold-links">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/board-of-directors">About</a></li>
-                    <li><a href="/events">Events</a></li>
-                    <li><a href="/press/articles">Press</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./board-of-directors.html">About</a></li>
+                    <li><a href="./events.html">Events</a></li>
+                    <li><a href="./youth.html">Youth</a></li>
+                    <li><a href="./news.html">Press</a></li>
                 </ul>
                 <ul class="regular-links">
                     <li><a
@@ -206,30 +271,27 @@
                 </ul>
             </div>
 
-            <div class="footer-logo">
-                <img src="images/Copy_of_Add_a_subheading__4_-removebg-preview.png" alt="Footer Logo" />
-            </div>
-
+            <!-- Right: Social Icons -->
             <div class="footer-social">
                 <!-- Facebook -->
                 <a href="https://www.facebook.com/p/United-Conservative-Party-Lethbridge-West-100068133120762/"
                     target="_blank">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-
                 <!-- X (Twitter) -->
                 <a href="https://twitter.com/Alberta_UCP" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="x-logo" x="0px" y="0px" viewBox="0 0 1200 1227">
-                        <path
-                            d="M714.2,519.3L1160.9,0H1055L667.1,450.9L357.3,0H0l468.5,681.8L0,1226.4h105.9l409.6-476.2l327.2,476.2H1200 L714.2,519.3L714.2,519.3z M569.2,687.8l-47.5-67.9L144,79.7h162.6l304.8,436l47.5,67.9l396.2,566.7H892.5L569.2,687.8L569.2,687.8z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="x-logo" x="0px" y="0px" viewBox="0 0 1200 1227"
+                        width="24" height="24">
+                        <path fill="white"
+                            d="M714.2,519.3L1160.9,0H1055L667.1,450.9L357.3,0H0l468.5,681.8L0,1226.4h105.9l409.6-476.2l327.2,476.2H1200 
+              L714.2,519.3L714.2,519.3z M569.2,687.8l-47.5-67.9L144,79.7h162.6l304.8,436l47.5,67.9l396.2,566.7H892.5L569.2,687.8z">
+                        </path>
                     </svg>
                 </a>
-
                 <!-- Instagram -->
                 <a href="https://www.instagram.com/ucplethwest/" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
-
                 <!-- Rumble -->
                 <a href="https://rumble.com/c/AlbertaUCP" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1441 1583" width="24" height="24">
@@ -238,26 +300,19 @@
                         </path>
                     </svg>
                 </a>
-
                 <!-- YouTube -->
                 <a href="https://www.youtube.com/@unitedconservatives" target="_blank">
                     <i class="fab fa-youtube"></i>
                 </a>
             </div>
         </div>
+
+        <!-- Single row below for copyright text -->
         <div class="footer-info">
-            <style>
-                .footer-info p {
-                    margin-top: 20px;
-                    text-align: center;
-                    font-size: 0.8rem;
-                    font-weight: 300;
-                    color: #d9d9d9;
-                }
-            </style>
             <p>© 2025 UCP Lethbridge-West. All Rights Reserved.</p>
         </div>
     </footer>
+
 
     <script src="script.js"></script>
 </body>
