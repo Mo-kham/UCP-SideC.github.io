@@ -101,19 +101,19 @@
 }
 
 .health {
-    color: #3b82f6;
+    color: #3b82f6 !important;
 }
 
 .economy {
-    color: #ef4444;
+    color: #ef4444 !important;
 }
 
 .general {
-    color: #10b981;
+    color: #10b981 !important;
 }
 
 .social {
-    color: #9333ea;
+    color: #9333ea !important;
 }
 
 .article-title {
