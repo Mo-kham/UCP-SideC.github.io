@@ -181,12 +181,20 @@
     text-align: left;
 }
 
+
 .kids-col h2,
 .potential-col h2 {
     font-size: 2rem;
+    color: #004080;
     margin-bottom: 20px;
 }
 
+.kids-col,
+.potential-col .TSI {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
 .kids-image {
     width: 100%;
     height: auto;
