@@ -203,7 +203,7 @@
     
     /* Image stretches vertically without covering the full width */
     .kids-image img {
-      height: 100%;
+      height: 500%;
       width: auto;   /* maintains the aspect ratio */
       display: block; /* removes default inline spacing */
       margin: 0 auto; /* centers image horizontally */
