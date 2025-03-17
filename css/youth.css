@@ -193,20 +193,13 @@
     color: #007bff;
     margin-bottom: 20px;
 }
-.kids-container {
-  /* Make sure the container itself has a fixed or calculable height */
-  height: 500px; /* Or use a responsive technique (e.g., min-height) */
-  width: 100%;   /* Or whatever width you need */
-  overflow: hidden; /* Hides any overflow if the image is taller than container */
-}
 
 .kids-image {
   /* Fill container’s height while keeping aspect ratio */
-  height: 100%;
+  height: 200%;
   width: 100%;
   object-fit: cover; 
-    border-radius: 2px;
-    margin-top: 0px;
+    border-radius: 1px;
     display: block;
   display: block; /* Removes extra space below image in some cases */
 }
