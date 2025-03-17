@@ -194,16 +194,18 @@
     margin-bottom: 20px;
 }
 
-.kids-image  {
-      height: 100vh; /* Adjust height (e.g., 100vh or a fixed pixel value like 700px) */
-      width: 100%; 
-      overflow: hidden; /* Hides any overflow from the image */
+
+.kids-image {
+      height: 100vh; /* Full viewport height */
+      width: 100vw;  /* Full viewport width */
+      overflow: hidden; /* Hide any overflowing parts of the image */
     }
+    
 .kids-image img {
-      display: block;    /* Removes extra space below the image */
-      height: 100%;      /* Fills the container's height */
-      width: auto;       /* Maintains the aspect ratio */
-      object-fit: cover; /* Ensures the image covers the container area */
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: cover; 
     }
 .potential-col p {
     font-size: 1.5rem;
